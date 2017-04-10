@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 飞鸟集
-category: 生活
+title: Go语言基础学习九－过程式编程一
+category: go语言基础
 comments: true
 ---
 ## Go语言基础学习九－过程式编程一
