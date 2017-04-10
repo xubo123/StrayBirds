@@ -1,12 +1,10 @@
-
 ---
 layout: post
-title: Java 中的并发
-category: 技术
+title: 飞鸟集
+category: 生活
 comments: true
-
 ---
-##Go语言基础学习九－过程式编程一
+## Go语言基础学习九－过程式编程一
    首先我们整理一下，我们这一章节需要学习的内容：
    <font color=red size=1 face=“黑体”>
   <br> &nbsp;&nbsp;&nbsp;&nbsp;1.go语言的一些语句结构上的基础知识。<br>
@@ -17,7 +15,7 @@ comments: true
    
 &nbsp;&nbsp;&nbsp;&nbsp;Go语言可以用于写纯过程程序，也可以用于写纯面向对象程序还可以用于写面向过程和面向对象相结合的程序。
    
-###语句基础
+### 语句基础
    
 &nbsp;&nbsp;Go语言的语法中需要使用分号来作为上下文中语句的分隔结束符，但实际的go语言程序中我们很少见到分号，因为编译器会自动在以标识符，数字字面量，字母字面量，关键字等结束的非空行末尾自动加上分号。有两个地方必须加上分号：1.当我们需要在一行中放入一条或多条语句时 2.使用原始的for循环结构时。除此之外，我们需要注意到自动插入分号的一个重要结果是一个右大括号无法自成一行：
 //正确代码   
@@ -30,11 +28,11 @@ comments: true
      fmt.Println(i)
      }
 
-###类型转换 
+### 类型转换 
 
 result := Type(expression)
 
-###类型断言
+### 类型断言
 
 &nbsp;&nbsp;Go语言的interface{}类型用于表示空接口，即一个方法集（可调用方法的集合）为空集的类型的值，由于每一种类型都有一个方法集合包含空的集合，一个interface｛｝的值用于表示任何Go类型的值。
 由于interafce｛｝的使用，为了访问该无类型的底层值，我们可以使用如下两种方法对该值进行类型断言，即断言该interafce｛｝为何类型数据：
@@ -45,7 +43,7 @@ result := Type(expression)
 例子：var i interface{} = 99
          j,ok=i.(int)// 断言i为int数据是，返回i和true，否返回0和false。这里显然是断言成功的
 
-###分支
+### 分支
 &nbsp;&nbsp;Go语言提供了三种分支语，if , switch , select
 
 &nbsp;&nbsp;if和C及java用法一致，这里我就不详细说明。
